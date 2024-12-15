@@ -1,0 +1,177 @@
+.body{
+    background: linear-gradient(120deg, #d4e9ff, #a8d8ff);
+    height: 100vh;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-y: hidden;
+}
+  
+  .head{
+    font-size: 72px;
+    margin-top: -382px;
+    font-family:'Courier New', Courier, monospace;
+  }
+  .headquestion{
+    font-size: 34px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 62px;
+  }
+
+  .questions {
+    margin-top: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold; 
+    font-size: 24px; 
+    color: #333; 
+    text-align: center; 
+    background: linear-gradient(135deg, #f9f9f9, #e6f7ff); 
+    padding: 20px;
+    border: 2px solid #007bff;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    width: 64%;
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+.optionContainer {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px; /* Text size for options */
+    display: flex; /* Arrange options in a neat layout */
+    flex-direction: row; /* Align buttons vertically */
+    margin-top: 20px; /* Add spacing above the container */
+    margin-left: 691px;
+}
+
+.optionContainer button {
+    background: linear-gradient(135deg, #ffffff, #d9f7ff); /* Gradient background for buttons */
+    font-size: 18px; /* Adjust font size for readability */
+    color: #333; /* Text color */
+    padding: 12px 28px; /* Padding for a balanced button size */
+    margin: 20px 18px; /* Space between buttons */
+    border: 2px solid #007bff; /* Add a blue border */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Show pointer cursor on hover */
+    transition: all 0.3s ease; /* Smooth transitions for hover effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    gap: 12px;
+}
+
+.optionContainer button:hover {
+    background: linear-gradient(135deg, #007bff, #0056b3); /* Change background on hover */
+    color: white; /* White text on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+.Score h2 {
+    font-size: 60px; /* Slightly larger for impact */
+    font-family: 'Poppins', sans-serif; /* Modern and professional font */
+    font-weight: 700; /* Bold for emphasis */
+    color: #1a1a1a; /* Dark gray for a softer feel */
+    margin-bottom: 20px; /* Add spacing below */
+}
+
+.Score p {
+    font-size: 28px; /* Slightly smaller for balance with the heading */
+    font-family: 'Roboto', sans-serif; /* Clean and legible font */
+    color: #4a4a4a; /* Medium gray for a modern look */
+    margin-bottom: 16px; /* Spacing for readability */
+}
+
+.Score button {
+    background: linear-gradient(135deg, #e3f2fd, #bbdefb); /* Softer blue gradient */
+    font-size: 18px; /* Consistent with original */
+    font-family: 'Roboto', sans-serif; /* Matching font for consistency */
+    font-weight: 500; /* Medium weight for clarity */
+    color: #1a237e; /* Deep indigo text for sophistication */
+    padding: 14px 30px; /* Slightly larger padding for better proportions */
+    margin: 16px 12px; /* Adjust spacing for cleaner layout */
+    border: none; /* Remove border for a clean look */
+    border-radius: 12px; /* More rounded corners for a friendly feel */
+    cursor: pointer; /* Pointer on hover */
+    transition: all 0.3s ease; /* Smooth transitions */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* More pronounced shadow for a premium feel */
+}
+
+.Score button:hover {
+    background: linear-gradient(135deg, #bbdefb, #90caf9); /* Slightly brighter on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+    transform: translateY(-2px); /* Lift button slightly */
+}
+
+.Score button:active {
+    transform: translateY(0); /* Reset lift on click */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow reduction */
+}
+
+@media (max-width: 768px) {
+    .body{
+        overflow: hidden;
+    }
+    .head {
+        font-size: 48px;
+        margin-top: -100px;
+        margin-left: 18px;
+    }
+
+    .headquestion {
+        font-size: 24px;
+    }
+
+    .questions {
+        font-size: 20px;
+        margin-left:51px;
+
+    }
+
+    .optionContainer {
+        flex-direction: column;
+        margin-left:21px;
+    }
+
+    .optionContainer button {
+        font-size: 16px;
+    }
+
+    .Score h2 {
+        font-size: 36px;
+    }
+
+    .Score p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .head {
+        font-size: 36px;
+        margin-top: -90px;
+    }
+
+    .headquestion {
+        font-size: 20px;
+    }
+
+    .questions {
+        font-size: 18px;
+    }
+
+    .optionContainer button {
+        padding: 8px 16px;
+        font-size: 14px;
+        
+    }
+
+    .Score h2 {
+        font-size: 28px;
+    }
+
+    .Score p {
+        font-size: 18px;
+    }
+}
