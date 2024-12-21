@@ -1,3 +1,7 @@
+.body{
+  background-color: aliceblue;
+}
+
 .image2 {
     display: block; /* Ensures it takes block space for centering */
     margin: 0 auto; /* Centers the image horizontally */
