@@ -36,3 +36,9 @@ This project is a fully functional and interactive quiz platform built with **Re
 1. Clone the repository:  
    ```bash
    git clone https://github.com/adarsh4j/Quiz-React.git
+
+
+## 🚀 Deployed Link
+You can try out the application here:
+
+[Quiz React - Live Demo](https://adarsh4j.github.io/Quiz-React/)
