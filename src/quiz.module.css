@@ -12,8 +12,8 @@
 }
   
   .head{
-    font-size: 72px;
-    margin-top: -382px;
+    font-size: 70px;
+    margin-top: -292px;
     font-family:'Courier New', Courier, monospace;
   }
   .headquestion{
@@ -21,53 +21,6 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-top: 62px;
   }
-
-  .questions {
-    margin-top: 50px;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold; 
-    font-size: 24px; 
-    color: #333; 
-    text-align: center; 
-    background: linear-gradient(135deg, #f9f9f9, #e6f7ff); 
-    padding: 20px;
-    border: 2px solid #007bff;
-    border-radius: 10px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-    width: 64%;
-    margin-left: auto; 
-    margin-right: auto; 
-}
-
-.optionContainer {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 22px; /* Text size for options */
-    display: flex; /* Arrange options in a neat layout */
-    flex-direction: row; /* Align buttons vertically */
-    margin-top: 20px; /* Add spacing above the container */
-    margin-left: 691px;
-}
-
-.optionContainer button {
-    background: linear-gradient(135deg, #ffffff, #d9f7ff); /* Gradient background for buttons */
-    font-size: 18px; /* Adjust font size for readability */
-    color: #333; /* Text color */
-    padding: 12px 28px; /* Padding for a balanced button size */
-    margin: 20px 18px; /* Space between buttons */
-    border: 2px solid #007bff; /* Add a blue border */
-    border-radius: 8px; /* Rounded corners */
-    cursor: pointer; /* Show pointer cursor on hover */
-    transition: all 0.3s ease; /* Smooth transitions for hover effect */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    gap: 12px;
-}
-
-.optionContainer button:hover {
-    background: linear-gradient(135deg, #007bff, #0056b3); /* Change background on hover */
-    color: white; /* White text on hover */
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
-    transform: scale(1.05); /* Slightly enlarge on hover */
-}
 .Score h2 {
     font-size: 60px; /* Slightly larger for impact */
     font-family: 'Poppins', sans-serif; /* Modern and professional font */
@@ -108,7 +61,69 @@
     transform: translateY(0); /* Reset lift on click */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow reduction */
 }
-
+.questionsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .questions {
+    font-size: 1.25rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    width: 100%;
+  }
+  
+  .optionContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .optionContainer button {
+    padding: 1rem 1.5rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #4a5568;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-align: left;
+  }
+  
+  .optionContainer button:hover {
+    background-color: #e2e8f0;
+    transform: translateY(-2px);
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 600px) {
+    .questionsContainer {
+      width: 95%;
+      padding: 1rem;
+    }
+  
+    .questions {
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+    }
+  
+    .optionContainer button {
+      padding: 0.8rem 1.2rem;
+    }
+  }
 @media (max-width: 768px) {
     .body{
         overflow: hidden;
